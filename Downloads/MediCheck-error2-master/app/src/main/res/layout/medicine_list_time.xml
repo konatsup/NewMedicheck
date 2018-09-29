@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="831dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/backbutton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    app:srcCompat="@android:drawable/ic_menu_revert" />
+
+                <Space
+                    android:layout_width="249dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/sendbutton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:text="薬ごと" />
+            </LinearLayout>
+
+            <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TimeView"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:text="朝"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/morning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TimeView2"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:text="昼"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/noon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TimeView3"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:text="夕"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton3"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/evening"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TimeView4"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:text="寝る前"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton4"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/beforesleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TimeView5"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:text="朝食後"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton5"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/afterbreakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TimeView6"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:text="昼食後"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton6"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/afterlunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/TimeView7"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:text="夕食後"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton7"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/afterdinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TimeView8"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:text="朝昼食間"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton8"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/breakfast_lunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TextView9"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:text="昼夕食間"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton9"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lunch_dinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TimeView10"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:text="適宜"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <ToggleButton
+                        android:id="@+id/visiblebutton10"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textOff="表示"
+                        android:textOn="非表示" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/everytime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!--</ScrollView>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

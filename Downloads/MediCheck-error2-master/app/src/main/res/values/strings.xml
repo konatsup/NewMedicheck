@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Medicheck</string>
+
+    <string-array name='list1'>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name='list2'>
+        <item>朝</item>
+        <item>昼</item>
+        <item>夕</item>
+        <item>寝る前</item>
+        <item>朝食後</item>
+        <item>昼食後</item>
+        <item>夕食後</item>
+        <item>朝昼食間</item>
+        <item>昼夕食間</item>
+        <item>適宜</item>
+        <item>指定なし</item>
+    </string-array>
+
+</resources>
